@@ -1,12 +1,11 @@
 {
-  "semi": false,
-  "singleQuote": true,
-  "overrides": [
-    {
-      "files": ".prettierrc",
-      "options": {
-        "parser": "json"
-      }
-    }
-  ]
+    "stylelintIntegration": true,
+    "eslintIntegration": true,
+    "printWidth": 80, 
+    "tabWidth": 4, 
+    "useTabs": false, 
+    "semi": false, 
+    "singleQuote": true,
+    "endOfLine": "auto",
+    "trailingComma":"none"
 }

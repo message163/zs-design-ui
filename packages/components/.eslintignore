@@ -1,0 +1,12 @@
+*.sh
+node_modules
+lib
+coverage
+*.md
+*.scss
+*.woff
+*.ttf
+src/index.ts
+dist
+demo
+*.d.ts

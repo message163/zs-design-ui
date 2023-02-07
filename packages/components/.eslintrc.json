@@ -1,0 +1,34 @@
+{
+    "root": true,
+    "parser": "vue-eslint-parser",
+    "extends": [
+        "plugin:vue/vue3-essential",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser"
+    },
+    "plugins": ["vue", "@typescript-eslint"],
+    "rules": {
+        "no-console": 2,
+        "strict": 2,
+        "id-match": 0,
+        "new-cap": 2,
+        "key-spacing": [
+            0,
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "camelcase": 2,
+        "no-unreachable": 2,
+        "no-redeclare": 2,
+        "no-implied-eval": 2,
+        "no-class-assign": 2,
+        "indent": [2, 4]
+    }
+}
