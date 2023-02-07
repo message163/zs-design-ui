@@ -15,6 +15,7 @@ const sidebar = {
   ],
 };
 const config = {
+  base:"/zs-design-ui/temp/",
   title: "🔨  Zs-Design-ui",
   description: "组件库搭建的教学模型",
   themeConfig: {
