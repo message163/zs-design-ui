@@ -1,50 +1,39 @@
-# 🔨 Zs-Design-UI是什么?
+---
+layout: home
 
-一个Mini版的组件库，基于Vite栈。为需要学习前端工程化的同学搭建的组件库搭建教学模型。
-## Features
+hero:
+  name: zs-design-ui
+  text: 高阶组件ui库.
+  tagline: 为开发提供组件库
+  image:
+    src: /assets/images/vite.png
+    alt: Zs
+  actions:
+    - theme: brand
+      text: 起步
+      link: /guide/    
+    - theme: alt
+      text: View on github
+      link: https://github.com/message163/zs-design-ui
 
-- ⚡️ Vue 3, Vite 4, pnpm, ESBuild - born with fastness
-- 🦾 TypeScript, of course
-- 🗂 File based routing
-- ⚙️ Unit Testing with Vitest
-- 😃 Eslint + Prittier
-- 🎨 UnoCSS - the instant on-demand atomic CSS engine
-- 🌍 I18n ready
-- 🚘 CI/CD with GithubActions
-
-
-## Install
-
-```bash
-npm i zs-design-ui
-```
-
-## Quick Start
-
-```js
-    import Vue from 'vue'
-    import zsDesignUi from 'element-ui'
-
-    const App = {
-        template: `
-                <MyButton/>
-            `,
-    };
-
-    createApp(App)
-        .use(zsDesignUi)
-        .mount("#app");
-
-```
-
-## Browser Support
-
-Modern browsers and Internet Explorer 10+.
-
-## Join Discussion Group
-
-Scan the QR code using [Dingtalk App](https://www.dingtalk.com/) to join in discussion group :
-
-<img alt="Join Discusion Group" src="https://github.com/smarty-team/smarty-admin/blob/main/assets/dingding.jpeg" width="300">
-
+features:
+  - icon: 💡
+    title: Instant Server Start
+    details: On demand file serving over native ESM, no bundling required!
+  - icon: ⚡️
+    title: Lightning Fast HMR
+    details: Hot Module Replacement (HMR) that stays fast regardless of app size.
+  - icon: 🛠️
+    title: Rich Features
+    details: Out-of-the-box support for TypeScript, JSX, CSS and more.
+  - icon: 📦
+    title: Optimized Build
+    details: Pre-configured Rollup build with multi-page and library mode support.
+  - icon: 🔩
+    title: Universal Plugins
+    details: Rollup-superset plugin interface shared between dev and build.
+  - icon: 🔑
+    title: Fully Typed APIs
+    details: Flexible programmatic APIs with full TypeScript typing.
+---
 
