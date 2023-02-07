@@ -6,12 +6,12 @@ hero:
   text: 高阶组件ui库.
   tagline: 为开发提供组件库
   image:
-    src: /assets/images/vite.png
+    src: ./logo.png
     alt: Zs
   actions:
     - theme: brand
       text: 起步
-      link: /guide/    
+      link: /guide/         
     - theme: alt
       text: View on github
       link: https://github.com/message163/zs-design-ui

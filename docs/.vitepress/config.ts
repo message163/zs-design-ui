@@ -14,12 +14,19 @@ const sidebar = {
     { text: "布局" },
   ],
 };
+const socialLinks = [
+    {
+        icon:"github",
+        link:"https://github.com/message163/zs-design-ui"
+    }
+]
 const config = {
   base:"/zs-design-ui/temp/",
   title: "🔨  Zs-Design-ui",
   description: "组件库搭建的教学模型",
   themeConfig: {
     sidebar,
+    socialLinks     
   },
   markdown: {
     config: (md) => {
