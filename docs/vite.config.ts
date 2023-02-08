@@ -5,7 +5,9 @@ export default defineConfig({
 
   ],
 
-  server:{
-     port:1999
+  server: {
+    open: true,
+    host: "0.0.0.0",
+    port: 1999
   }
 });
