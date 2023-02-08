@@ -20,13 +20,19 @@ const socialLinks = [
         link:"https://github.com/message163/zs-design-ui"
     }
 ]
+const editLink = {
+  pattern: "https://github.com/message163/zs-design-ui/tree/main/docs/:path",
+  text: "Suggest changes to this page",
+};
 const config = {
   base:"/zs-design-ui/temp/",
   title: "🔨  Zs-Design-ui",
   description: "组件库搭建的教学模型",
+  lastUpdated: true,
   themeConfig: {
     sidebar,
-    socialLinks     
+    socialLinks,
+    editLink,
   },
   markdown: {
     config: (md) => {
