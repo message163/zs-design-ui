@@ -3,6 +3,8 @@ const sidebar = {
     { text: "介绍", link: "/" },
     {
       text: "通用",
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: "Button 按钮", link: "/components/button/" },
       ],
