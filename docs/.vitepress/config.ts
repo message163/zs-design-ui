@@ -28,7 +28,7 @@ const editLink = {
 };
 const config = {
   base:"/zs-design-ui/temp/",
-  title: "🔨  Zs-Design-ui",
+  title: "🔨  zs-design-ui",
   description: "组件库搭建的教学模型",
   lastUpdated: true,
   themeConfig: {

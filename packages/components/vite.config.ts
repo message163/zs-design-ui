@@ -17,7 +17,7 @@ export const config: UserConfigExport = {
     plugins: [
         vue(),
         dts({
-            outputDir: './dist/types',
+            outputDir: '../../dist/types',
             insertTypesEntry: false, // 插入TS 入口
             copyDtsFiles: true // 是否将源码里的 .d.ts 文件复制到 outputDir
         }),
@@ -35,7 +35,7 @@ export const config: UserConfigExport = {
             fileName: 'zs-design-ui',
             formats: ['es', 'umd', 'iife'] // 导出模块类型
         },
-        outDir: './dist'
+        outDir: '../../dist'
     },
 
     test: {

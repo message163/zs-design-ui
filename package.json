@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"pnpm --filter @zs-design-ui/components build:vite",
+    "docs:dev": "pnpm --filter @zs-design-ui/docs docs:dev",
+    "docs:build": "pnpm --filter @zs-design-ui/docs docs:build",
+    "docs:serve": "pnpm --filter @zs-design-ui/docs docs:serve"
   },
   "keywords": [],
   "author": "",
