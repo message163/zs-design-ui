@@ -1,0 +1,47 @@
+@use "./mixins/mixins.scss" as *;
+@use "./mixins/function.scss" as *;
+@use "./mixins/var.scss" as *;
+
+// 默认样式变量
+@include className(button) {
+  @include set-component-css-var("button", $button);
+}
+
+// 颜色类型变量
+@each $type in $types {
+  @include className(button, $type) {
+    @include set-button-type-css-var("button", $typeButton, $type);
+  }
+}
+
+@include className(button) {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  color: getCssVar("button", "text-color");
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.1s;
+  // font-weight: getCssVar("button", "font-weight");
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background-color: getCssVar("button", "bg-color");
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: 1px solid getCssVar("button", "border-color");
+  // border-color: getCssVar("button", "border-color");
+
+  > span {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  & + & {
+    margin-left: 12px;
+  }
+}

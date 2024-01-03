@@ -11,14 +11,14 @@
 ```vue
 <template>
   <div style="margin-bottom:20px;">
+    <zs-button>默认按钮</zs-button>
     <zs-button color="blue">主要按钮</zs-button>
     <zs-button color="green">绿色按钮</zs-button>
     <zs-button color="gray">灰色按钮</zs-button>
     <zs-button color="yellow">黄色按钮</zs-button>
     <zs-button color="red">红色按钮</zs-button>
   </div>
-  <div style="margin-bottom:20px;"
-  >
+  <div style="margin-bottom:20px;">
     <zs-button color="blue" plain>朴素按钮</zs-button>
     <zs-button color="green" plain>绿色按钮</zs-button>
     <zs-button color="gray" plain>灰色按钮</zs-button>

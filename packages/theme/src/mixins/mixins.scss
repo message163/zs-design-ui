@@ -1,0 +1,35 @@
+@use "./config.scss" as *;
+@use "./function.scss" as *;
+
+// .zs-button--type {}
+@mixin className($block, $type: "") {
+  @if $type == "" {
+    $B: $namespace + $common-separator + $block !global;
+  } @else {
+    $B: $namespace +
+      $common-separator +
+      $block +
+      $modifier-separator +
+      $type !global;
+  }
+  .#{$B} {
+    @content;
+  }
+}
+
+// --zs-button-bg-color : var(--zs-color-blue)
+@mixin set-component-css-var($name, $variables) {
+  @each $attribute, $value in $variables {
+    #{getCssVarName($name, $attribute)}: $value;
+  }
+}
+
+@mixin set-button-type-css-var($name, $variables, $type) {
+  @each $attribute, $value in $variables {
+    @if $attribute == "bg-color" {
+      #{getCssVarName($name,$attribute)}: getCssVar($value, $type);
+    } @else {
+      #{getCssVarName($name, $attribute)}: $value;
+    }
+  }
+}

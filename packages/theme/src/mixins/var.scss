@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "./function.scss" as *;
+
+// color types
+$types: "blue", "green", "gray", "yellow", "red";
+
+// button
+$button: () !default;
+$button: map.merge(
+  (
+    "bg-color": getCssVar("color", "default"),
+    "text-color": getCssVar("text", "color-regular"),
+    "border-color": getCssVar("border", "color"),
+  ),
+  $button
+);
+
+// type-button
+$typeButton: () !default;
+$typeButton: map.merge(
+  (
+    "bg-color": "color",
+    "text-color": getCssVar("color", "default"),
+  ),
+  $typeButton
+);
