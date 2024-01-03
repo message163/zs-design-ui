@@ -1,0 +1,22 @@
+@use "./config.scss" as *;
+
+// joinVarName(('color', 'blue')) => '--zs-color-blue'
+@function joinVarName($list) {
+  $name: $modifier-separator + $namespace;
+  @each $item in $list {
+    @if $item != "" {
+      $name: $name + $common-separator + $item;
+    }
+  }
+  @return $name;
+}
+
+// getCssVar('color', 'blue') => var(--zs-color-blue)
+@function getCssVar($args...) {
+  @return var(#{joinVarName($args)});
+}
+
+// getCssVarName('color', 'blue') => '--zs-color-blue'
+@function getCssVarName($args...) {
+  @return joinVarName($args);
+}
